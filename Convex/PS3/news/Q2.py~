@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import numpy.linalg as la
+import numpy.random as rn
+import os
+
+from scipy.io import mmread
+
+
+def Q2():
+	X_train=mmread("X_news_train.mtx")
+	X_test=mmread("X_news_test.mtx")
+
+if __name__ == "__main__":
+	Q2()
