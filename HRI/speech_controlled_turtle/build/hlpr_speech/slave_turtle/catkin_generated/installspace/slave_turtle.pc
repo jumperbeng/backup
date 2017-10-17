@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/HRI/speech_controlled_turtle/install
+
+Name: slave_turtle
+Description: Description of slave_turtle
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jumper/Documents/HRI/speech_controlled_turtle/install/lib 
+Requires: 

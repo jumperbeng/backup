@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/HRI/speech_controlled_turtle/devel
+
+Name: hlpr_speech_synthesis
+Description: Description of hlpr_speech_synthesis
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jumper/Documents/HRI/speech_controlled_turtle/devel/lib 
+Requires: 

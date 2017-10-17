@@ -1,0 +1,9 @@
+The turtle can understand the following commands:
+
+1. GO STRAIGHT: Keep the orientation, and set the linear velocity to a constant
+2. LEFT TURN: Increase the angular velocity a little bit
+3. RIGHT TURN: Decrease the angular velocity a little bit
+4. GO FASTER: INcrease the linear velocity a little bit
+5. GO SLOWER: Decrease the linear velocity a little bit
+6. STOP: Fully stop, and keep the current position and orientation
+

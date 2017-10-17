@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/HRI/speech_controlled_turtle/install
+
+Name: hlpr_speech_recognition
+Description: Description of hlpr_speech_recognition
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jumper/Documents/HRI/speech_controlled_turtle/install/lib 
+Requires: 

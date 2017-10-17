@@ -1,0 +1,2 @@
+hlpr_speech/hlpr_speech:hlpr_speech/hlpr_speech_msgs:hlpr_speech/hlpr_speech_recognition:hlpr_speech/hlpr_speech_synthesis:hlpr_speech/slave_turtle
+-DCATKIN_DEVEL_PREFIX=/home/jumper/Documents/HRI/speech_controlled_turtle/devel -DCMAKE_INSTALL_PREFIX=/home/jumper/Documents/HRI/speech_controlled_turtle/install -G Unix Makefiles
