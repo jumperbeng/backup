@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find sn3)/launch/worlds/mw1.world"/>
+  </include>
+  <node pkg="sn3" type="move_human" name="move_human" />
+</launch>

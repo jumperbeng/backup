@@ -1,0 +1,30 @@
+# Target labels
+ vtkParallelCore
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkCommunicator.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkDummyCommunicator.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkDummyController.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkMultiProcessController.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkMultiProcessStream.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkProcess.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkProcessGroup.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSocketCommunicator.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSocketController.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSubCommunicator.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSubGroup.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkFieldDataSerializer.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Parallel/Core/vtkSocketCommunicatorHash.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkCommunicator.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkDummyCommunicator.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkDummyController.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkMultiProcessController.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkMultiProcessStream.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkProcess.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkProcessGroup.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSocketCommunicator.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSocketController.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSubCommunicator.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkSubGroup.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Parallel/Core/vtkFieldDataSerializer.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Parallel/Core/vtkParallelCoreModule.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Parallel/Core/vtkSocketCommunicatorHash.h.rule

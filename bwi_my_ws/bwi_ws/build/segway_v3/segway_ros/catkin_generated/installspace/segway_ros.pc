@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: segway_ros
+Description: Description of segway_ros
+Version: 0.0.1
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/install/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib 
+Requires: 

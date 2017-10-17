@@ -1,0 +1,13 @@
+# Target labels
+ vtkverdict
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_EdgeMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_GaussIntegration.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_HexMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_KnifeMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_PyramidMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_QuadMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_TetMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_TriMetric.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/VerdictVector.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/verdict/vtkverdict/V_WedgeMetric.cpp

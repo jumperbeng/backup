@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_mapper/include/bwi_mapper/circle_provider.h
+vector
+-
+
+/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_mapper/test/test_circle.cpp
+bwi_mapper/circle_provider.h
+-
+

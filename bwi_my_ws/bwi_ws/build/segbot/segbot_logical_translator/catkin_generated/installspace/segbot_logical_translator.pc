@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: segbot_logical_translator
+Description: Description of segbot_logical_translator
+Version: 0.3.5
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/install/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib -lsegbot_logical_translator
+Requires: actionlib bwi_mapper bwi_msgs bwi_planning_common dynamic_reconfigure map_msgs message_filters move_base_msgs multi_level_map_msgs multi_level_map_utils nav_msgs roscpp tf

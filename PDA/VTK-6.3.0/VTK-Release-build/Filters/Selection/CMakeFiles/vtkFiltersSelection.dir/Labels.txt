@@ -1,0 +1,10 @@
+# Target labels
+ vtkFiltersSelection
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkKdTreeSelector.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkLinearSelector.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkCellDistanceSelector.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkKdTreeSelector.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkLinearSelector.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Selection/vtkCellDistanceSelector.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Filters/Selection/vtkFiltersSelectionModule.h

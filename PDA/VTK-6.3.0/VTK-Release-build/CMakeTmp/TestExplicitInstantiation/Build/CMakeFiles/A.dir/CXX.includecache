@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeTmp/TestExplicitInstantiation/A.cxx
+A.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeTmp/TestExplicitInstantiation/A.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeTmp/TestExplicitInstantiation/A.h
+

@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: segway_v3_config
+Description: Description of segway_v3_config
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib 
+Requires: 

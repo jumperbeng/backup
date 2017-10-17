@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: segbot_sensors
+Description: Description of segbot_sensors
+Version: 0.3.5
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/include -I/home/jumper/Documents/bwi_my_ws/bwi_ws/src/segbot/segbot_sensors/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib -lsegbot_sensors_filters -lrange_to_cloud
+Requires: diagnostic_msgs dynamic_reconfigure geometry_msgs laser_filters message_runtime nodelet pcl_ros sensor_msgs std_msgs tf

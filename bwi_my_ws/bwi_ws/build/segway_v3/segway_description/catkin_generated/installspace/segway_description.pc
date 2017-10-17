@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: segway_description
+Description: Description of segway_description
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib 
+Requires: 

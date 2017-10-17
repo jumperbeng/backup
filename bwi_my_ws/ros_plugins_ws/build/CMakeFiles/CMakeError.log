@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec931780241/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec931780241.dir/build.make CMakeFiles/cmTryCompileExec931780241.dir/build
+make[1]: Entering directory `/home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec931780241.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec931780241.dir/CheckSymbolExists.c.o   -c /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec931780241
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec931780241.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec931780241.dir/CheckSymbolExists.c.o  -o cmTryCompileExec931780241 -rdynamic 
+CMakeFiles/cmTryCompileExec931780241.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec931780241] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec931780241/fast] Error 2
+
+File /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec324586997/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec324586997.dir/build.make CMakeFiles/cmTryCompileExec324586997.dir/build
+make[1]: Entering directory `/home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec324586997.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec324586997.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec324586997
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec324586997.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec324586997.dir/CheckFunctionExists.c.o  -o cmTryCompileExec324586997 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec324586997] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/bwi_my_ws/ros_plugins_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec324586997/fast] Error 2
+
+

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/multi_level_map_utils/include/multi_level_map_utils/utils.h
+iostream
+-
+cassert
+-
+string
+-
+vector
+-
+boost/algorithm/string.hpp
+-
+
+/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/multi_level_map_utils/src/utils.cpp
+multi_level_map_utils/utils.h
+-
+

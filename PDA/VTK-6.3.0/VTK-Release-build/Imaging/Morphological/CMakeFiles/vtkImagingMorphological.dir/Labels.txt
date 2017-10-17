@@ -1,0 +1,24 @@
+# Target labels
+ vtkImagingMorphological
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageConnector.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageContinuousDilate3D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageContinuousErode3D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageDilateErode3D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageIslandRemoval2D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageNonMaximumSuppression.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageOpenClose3D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageSeedConnectivity.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageSkeleton2D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageThresholdConnectivity.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageConnector.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageContinuousDilate3D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageContinuousErode3D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageDilateErode3D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageIslandRemoval2D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageNonMaximumSuppression.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageOpenClose3D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageSeedConnectivity.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageSkeleton2D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Morphological/vtkImageThresholdConnectivity.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Morphological/vtkImagingMorphologicalModule.h

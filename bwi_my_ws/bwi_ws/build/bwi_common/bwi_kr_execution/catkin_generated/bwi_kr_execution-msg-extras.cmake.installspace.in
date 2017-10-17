@@ -1,0 +1,2 @@
+set(bwi_kr_execution_MESSAGE_FILES "msg/AnswerSet.msg;msg/AspFluent.msg;msg/AspRule.msg;msg/ExecutePlanAction.msg;msg/ExecutePlanActionGoal.msg;msg/ExecutePlanActionResult.msg;msg/ExecutePlanActionFeedback.msg;msg/ExecutePlanGoal.msg;msg/ExecutePlanResult.msg;msg/ExecutePlanFeedback.msg")
+set(bwi_kr_execution_SERVICE_FILES "srv/ComputeAllPlans.srv;srv/ComputePlan.srv;srv/CurrentStateQuery.srv;srv/IsPlanValid.srv;srv/UpdateFluents.srv")

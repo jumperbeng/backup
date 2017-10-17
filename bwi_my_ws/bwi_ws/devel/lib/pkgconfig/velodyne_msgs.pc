@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: velodyne_msgs
+Description: Description of velodyne_msgs
+Version: 1.2.0
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib 
+Requires: message_runtime std_msgs

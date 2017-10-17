@@ -1,0 +1,38 @@
+# Target labels
+ vtkFiltersStatistics
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkAutoCorrelativeStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkBivariateLinearTableThreshold.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkComputeQuartiles.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkContingencyStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkCorrelativeStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkDescriptiveStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkHighestDensityRegionsStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkExtractFunctionalBagPlot.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansDistanceFunctorCalculator.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansDistanceFunctor.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkMultiCorrelativeStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkOrderStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkPCAStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStatisticsAlgorithm.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStrahlerMetric.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStreamingStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkAutoCorrelativeStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkBivariateLinearTableThreshold.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkComputeQuartiles.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkContingencyStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkCorrelativeStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkDescriptiveStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkHighestDensityRegionsStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkExtractFunctionalBagPlot.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansDistanceFunctorCalculator.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansDistanceFunctor.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkKMeansStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkMultiCorrelativeStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkOrderStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkPCAStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStatisticsAlgorithm.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStrahlerMetric.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Statistics/vtkStreamingStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Filters/Statistics/vtkFiltersStatisticsModule.h

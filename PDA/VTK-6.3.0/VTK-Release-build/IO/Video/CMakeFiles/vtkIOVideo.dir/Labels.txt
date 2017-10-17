@@ -1,0 +1,6 @@
+# Target labels
+ vtkIOVideo
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Video/vtkVideoSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Video/vtkVideoSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/IO/Video/vtkIOVideoModule.h

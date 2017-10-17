@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: si_utils
+Description: Description of si_utils
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib 
+Requires: 

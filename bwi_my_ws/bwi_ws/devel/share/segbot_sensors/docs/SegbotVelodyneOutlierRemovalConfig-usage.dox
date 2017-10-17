@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="segbot_sensors" pkg="segbot_sensors" type="segbot_sensors">
+  <param name="support_struct_angle" type="double" value="0.6362" />
+  <param name="wire_conduit_angle" type="double" value="0.6126" />
+  <param name="range" type="double" value="1.75" />
+</node>
+\endverbatim
+

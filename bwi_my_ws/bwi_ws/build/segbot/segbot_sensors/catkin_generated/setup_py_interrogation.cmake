@@ -1,0 +1,6 @@
+set(segbot_sensors_SETUP_PY_VERSION "0.3.5")
+set(segbot_sensors_SETUP_PY_SCRIPTS "")
+set(segbot_sensors_SETUP_PY_PACKAGES "segbot_sensors")
+set(segbot_sensors_SETUP_PY_PACKAGE_DIRS "src/segbot_sensors")
+set(segbot_sensors_SETUP_PY_MODULES "")
+set(segbot_sensors_SETUP_PY_MODULE_DIRS "")

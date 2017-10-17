@@ -1,0 +1,20 @@
+Usage: evaluator -tech_lef <input LEF for technology> -cell_lef <input LEF for cell macros> -placement_constraints <optional placement constraints files> -input_def <the initial placement> -output_def <the result placement>
+
+If any of the parameter is missing, the evaluator will read the default filename, which follows the naming of the benchmarks.
+
+Default:
+tech_lef : tech.lef
+cell_lef : cells_modified.lef
+placement_constraints : placement.constraints
+input_def : placed.def
+output_def : lg.def
+
+Note:
+
+The binary is statically linked, for GNU/Linux 2.6.32. It was tested on the LRC machine "luigi".
+
+Make sure all the cells from the input DEF also appears in the output DEF. And the evaluator won't evaluate the movement if the row and site alignment is not satisfied.
+
+The movement score will be calculated even if there exists P/G alignment violations or overlapping between cells.
+
+Report bugs and questions to krzhu@hotmail.com

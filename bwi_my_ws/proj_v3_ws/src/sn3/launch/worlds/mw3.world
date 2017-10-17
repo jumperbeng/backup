@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://grey_wall</uri>
+      <pose> -3.0 5.0 0 0 0 1.570796</pose>
+    </include>
+
+    <include>
+      <uri>model://grey_wall</uri>
+      <pose> -3.0 -2.5 0 0 0 1.570796</pose>
+    </include>
+
+    <include>
+      <uri>model://grey_wall</uri>
+      <pose> 3.0 5.0 0 0 0 1.570796</pose>
+    </include>
+
+    <include>
+      <uri>model://grey_wall</uri>
+      <pose> 3.0 -2.5 0 0 0 1.570796</pose>
+    </include>
+
+    <model name="human1">
+      <include>
+        <uri>model://person_standing</uri>
+        <pose>0 5.0 0 0 0 0</pose>
+      </include>
+    </model>
+
+    <model name="human2">
+      <include>
+        <uri>model://person_standing</uri>
+        <pose>0.0 -5.0 0 0 0 3.141592</pose>
+      </include>
+    </model>
+
+    <arg name="robot_configuration" default="$(find segbot_bringup)/launch/includes/auxiliary.segbot_v1.hokuyo_only.launch.xml" />
+    <arg name="use_full_gazebo_model" default="true" />
+
+    <group ns="robot1">
+      <include file="segbot_mobile_base.launch">
+        <arg name="robotid" value="robot1" />
+        <arg name="configuration_file" value="$(arg robot_configuration)" />
+        <arg name="x" value="0" />
+        <arg name="y" value="0" />
+        <arg name="tf_prefix" value="robot1" />
+        <arg name="launch_localization" value="true" />
+        <arg name="launch_move_base" value="true" />
+        <arg name="use_full_gazebo_model" value="$(arg use_full_gazebo_model)" />
+      </include>
+    </group>
+  </world>
+
+
+
+</sdf>

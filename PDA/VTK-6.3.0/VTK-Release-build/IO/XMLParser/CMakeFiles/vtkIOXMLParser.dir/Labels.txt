@@ -1,0 +1,10 @@
+# Target labels
+ vtkIOXMLParser
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLDataParser.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLParser.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLUtilities.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLDataParser.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLParser.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/XMLParser/vtkXMLUtilities.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/IO/XMLParser/vtkIOXMLParserModule.h

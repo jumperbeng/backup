@@ -1,0 +1,180 @@
+; Auto-generated. Do not edit!
+
+
+(cl:in-package bwi_msgs-msg)
+
+
+;//! \htmlinclude ScavStatus.msg.html
+
+(cl:defclass <ScavStatus> (roslisp-msg-protocol:ros-message)
+  ((names
+    :reader names
+    :initarg :names
+    :type (cl:vector cl:string)
+   :initform (cl:make-array 0 :element-type 'cl:string :initial-element ""))
+   (statuses
+    :reader statuses
+    :initarg :statuses
+    :type (cl:vector cl:integer)
+   :initform (cl:make-array 0 :element-type 'cl:integer :initial-element 0))
+   (certificates
+    :reader certificates
+    :initarg :certificates
+    :type (cl:vector cl:string)
+   :initform (cl:make-array 0 :element-type 'cl:string :initial-element "")))
+)
+
+(cl:defclass ScavStatus (<ScavStatus>)
+  ())
+
+(cl:defmethod cl:initialize-instance :after ((m <ScavStatus>) cl:&rest args)
+  (cl:declare (cl:ignorable args))
+  (cl:unless (cl:typep m 'ScavStatus)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name bwi_msgs-msg:<ScavStatus> is deprecated: use bwi_msgs-msg:ScavStatus instead.")))
+
+(cl:ensure-generic-function 'names-val :lambda-list '(m))
+(cl:defmethod names-val ((m <ScavStatus>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader bwi_msgs-msg:names-val is deprecated.  Use bwi_msgs-msg:names instead.")
+  (names m))
+
+(cl:ensure-generic-function 'statuses-val :lambda-list '(m))
+(cl:defmethod statuses-val ((m <ScavStatus>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader bwi_msgs-msg:statuses-val is deprecated.  Use bwi_msgs-msg:statuses instead.")
+  (statuses m))
+
+(cl:ensure-generic-function 'certificates-val :lambda-list '(m))
+(cl:defmethod certificates-val ((m <ScavStatus>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader bwi_msgs-msg:certificates-val is deprecated.  Use bwi_msgs-msg:certificates instead.")
+  (certificates m))
+(cl:defmethod roslisp-msg-protocol:symbol-codes ((msg-type (cl:eql '<ScavStatus>)))
+    "Constants for message type '<ScavStatus>"
+  '((:ONGOING . 1)
+    (:FINISHED . 2)
+    (:TODO . 3))
+)
+(cl:defmethod roslisp-msg-protocol:symbol-codes ((msg-type (cl:eql 'ScavStatus)))
+    "Constants for message type 'ScavStatus"
+  '((:ONGOING . 1)
+    (:FINISHED . 2)
+    (:TODO . 3))
+)
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <ScavStatus>) ostream)
+  "Serializes a message object of type '<ScavStatus>"
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'names))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((__ros_str_len (cl:length ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) ele))
+   (cl:slot-value msg 'names))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'statuses))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let* ((signed ele) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    ))
+   (cl:slot-value msg 'statuses))
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'certificates))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((__ros_str_len (cl:length ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) ele))
+   (cl:slot-value msg 'certificates))
+)
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <ScavStatus>) istream)
+  "Deserializes a message object of type '<ScavStatus>"
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'names) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'names)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:aref vals i) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:aref vals i) __ros_str_idx) (cl:code-char (cl:read-byte istream))))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'statuses) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'statuses)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:aref vals i) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296)))))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'certificates) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'certificates)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:aref vals i) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:aref vals i) __ros_str_idx) (cl:code-char (cl:read-byte istream))))))))
+  msg
+)
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<ScavStatus>)))
+  "Returns string type for a message object of type '<ScavStatus>"
+  "bwi_msgs/ScavStatus")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'ScavStatus)))
+  "Returns string type for a message object of type 'ScavStatus"
+  "bwi_msgs/ScavStatus")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<ScavStatus>)))
+  "Returns md5sum for a message object of type '<ScavStatus>"
+  "38e2b5af66f5d641973272e8eb0ef803")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'ScavStatus)))
+  "Returns md5sum for a message object of type 'ScavStatus"
+  "38e2b5af66f5d641973272e8eb0ef803")
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<ScavStatus>)))
+  "Returns full string definition for message of type '<ScavStatus>"
+  (cl:format cl:nil "int32 ONGOING = 1~%int32 FINISHED = 2~%int32 TODO = 3~%~%string[] names~%int32[] statuses~%string[] certificates~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'ScavStatus)))
+  "Returns full string definition for message of type 'ScavStatus"
+  (cl:format cl:nil "int32 ONGOING = 1~%int32 FINISHED = 2~%int32 TODO = 3~%~%string[] names~%int32[] statuses~%string[] certificates~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <ScavStatus>))
+  (cl:+ 0
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'names) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4 (cl:length ele))))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'statuses) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'certificates) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4 (cl:length ele))))
+))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <ScavStatus>))
+  "Converts a ROS message object to a list"
+  (cl:list 'ScavStatus
+    (cl:cons ':names (names msg))
+    (cl:cons ':statuses (statuses msg))
+    (cl:cons ':certificates (certificates msg))
+))

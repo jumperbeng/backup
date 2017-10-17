@@ -1,0 +1,23 @@
+
+(cl:in-package :asdf)
+
+(defsystem "bwi_virtour-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "LeaveTour" :depends-on ("_package_LeaveTour"))
+    (:file "_package_LeaveTour" :depends-on ("_package"))
+    (:file "RequestTour" :depends-on ("_package_RequestTour"))
+    (:file "_package_RequestTour" :depends-on ("_package"))
+    (:file "GetTourState" :depends-on ("_package_GetTourState"))
+    (:file "_package_GetTourState" :depends-on ("_package"))
+    (:file "GoBesideLocation" :depends-on ("_package_GoBesideLocation"))
+    (:file "_package_GoBesideLocation" :depends-on ("_package"))
+    (:file "Authenticate" :depends-on ("_package_Authenticate"))
+    (:file "_package_Authenticate" :depends-on ("_package"))
+    (:file "PingTour" :depends-on ("_package_PingTour"))
+    (:file "_package_PingTour" :depends-on ("_package"))
+    (:file "GoToLocation" :depends-on ("_package_GoToLocation"))
+    (:file "_package_GoToLocation" :depends-on ("_package"))
+    (:file "Rotate" :depends-on ("_package_Rotate"))
+    (:file "_package_Rotate" :depends-on ("_package"))
+  ))

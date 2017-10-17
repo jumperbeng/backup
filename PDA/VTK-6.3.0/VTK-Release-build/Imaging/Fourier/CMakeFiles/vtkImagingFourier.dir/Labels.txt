@@ -1,0 +1,22 @@
+# Target labels
+ vtkImagingFourier
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageButterworthHighPass.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageButterworthLowPass.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFFT.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFourierCenter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFourierFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageIdealHighPass.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageIdealLowPass.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageRFFT.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkTableFFT.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageButterworthHighPass.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageButterworthLowPass.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFFT.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFourierCenter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageFourierFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageIdealHighPass.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageIdealLowPass.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkImageRFFT.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Fourier/vtkTableFFT.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Fourier/vtkImagingFourierModule.h

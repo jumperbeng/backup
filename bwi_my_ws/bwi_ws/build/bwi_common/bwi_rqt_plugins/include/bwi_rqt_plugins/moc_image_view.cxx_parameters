@@ -1,0 +1,12 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="bwi_rqt_plugins"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-DQT_NO_DEBUG
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/home/jumper/Documents/bwi_my_ws/bwi_ws/build/bwi_common/bwi_rqt_plugins/include/bwi_rqt_plugins/moc_image_view.cxx
+/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_rqt_plugins/include/bwi_rqt_plugins/image_view.h

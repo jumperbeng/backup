@@ -1,0 +1,18 @@
+# Target labels
+ vtkFiltersAMR
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRCutPlane.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRGaussianPulseSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRResampleFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRSliceFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRToMultiBlockFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkImageToAMR.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkParallelAMRUtilities.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRCutPlane.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRGaussianPulseSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRResampleFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRSliceFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkAMRToMultiBlockFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkImageToAMR.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/AMR/vtkParallelAMRUtilities.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Filters/AMR/vtkFiltersAMRModule.h

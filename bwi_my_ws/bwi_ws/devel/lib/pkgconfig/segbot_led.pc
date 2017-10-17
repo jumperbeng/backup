@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: segbot_led
+Description: Description of segbot_led
+Version: 0.3.5
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib 
+Requires: actionlib_msgs bwi_msgs roscpp serial std_msgs

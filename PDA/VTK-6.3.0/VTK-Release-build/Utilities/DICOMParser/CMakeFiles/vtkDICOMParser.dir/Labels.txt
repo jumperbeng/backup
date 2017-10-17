@@ -1,0 +1,6 @@
+# Target labels
+ vtkDICOMParser
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/DICOMParser/DICOMFile.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/DICOMParser/DICOMParser.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/DICOMParser/DICOMAppHelper.cxx

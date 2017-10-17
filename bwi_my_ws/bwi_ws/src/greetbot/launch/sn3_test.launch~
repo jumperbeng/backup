@@ -1,0 +1,24 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find greetbot)/launch/worlds/mw3.world"/>
+  </include>
+
+  <!-- launch robot description and robot internal tf tree, along with any common nodes between h/w and software -->
+  <include file="$(arg configuration_file)">
+    <arg name="use_full_gazebo_model" value="$(arg use_full_gazebo_model)" />
+    <arg name="tf_prefix" value="$(arg tf_prefix)" />
+  </include>
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model"
+    args="-param robot_description
+    -urdf
+    -x 0
+    -y 0
+    -z 0
+    -R 0
+    -P 0
+    -Y 0"
+    respawn="false" output="screen">
+  </node>
+</launch>

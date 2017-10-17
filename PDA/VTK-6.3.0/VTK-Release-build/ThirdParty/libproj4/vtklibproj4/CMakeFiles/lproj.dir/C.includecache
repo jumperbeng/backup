@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../ThirdParty/libproj4/vtklibproj4/lib_proj.h
+proj_config.h
+../ThirdParty/libproj4/vtklibproj4/proj_config.h
+math.h
+-
+stdlib.h
+-
+
+../ThirdParty/libproj4/vtklibproj4/vtk_libproj4_mangle.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/libproj4/vtklibproj4/lproj.c
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+string.h
+-
+errno.h
+-
+stdarg.h
+-
+proj_config.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/libproj4/vtklibproj4/proj_config.h
+lib_proj.h
+-
+
+ThirdParty/libproj4/vtklibproj4/proj_config.h
+vtk_libproj4_mangle.h
+ThirdParty/libproj4/vtklibproj4/vtk_libproj4_mangle.h
+

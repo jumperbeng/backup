@@ -1,0 +1,37 @@
+<package>
+  <name>segbot</name>
+  <version>0.3.5</version>
+  <description>
+    ROS packages for controlling Segway-based robots at the Learning Agents
+    Research Group (LARG), AI Laboratory, Department of Computer Science, 
+    University of Texas at Austin.
+  </description>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/segbot</url>
+  <url type="repository">https://github.com/utexas-bwi/segbot.git</url>
+  <url type="bugtracker">https://github.com/utexas-bwi/segbot/issues</url>
+
+  <author email="piyushk@gmail.com">Piyush Khandelwal</author>
+  <maintainer email="piyushk@gmail.com">Piyush Khandelwal</maintainer>
+  <maintainer email="jack.oquin@gmail.com">Jack O'Quin</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>segbot_bringup</run_depend>
+  <run_depend>segbot_description</run_depend>
+  <run_depend>segbot_firmware</run_depend>
+  <run_depend>segbot_gazebo</run_depend>
+  <run_depend>segbot_gui</run_depend>
+  <run_depend>segbot_logical_translator</run_depend>
+  <run_depend>segbot_navigation</run_depend>
+  <run_depend>segbot_sensors</run_depend>
+  <run_depend>segbot_simulation_apps</run_depend>
+
+  <export>
+    <metapackage/>
+    <architecture_independent/>
+  </export>
+
+</package>

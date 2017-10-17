@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: segbot_simulation_apps
+Description: Description of segbot_simulation_apps
+Version: 0.3.5
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/src/segbot/segbot_simulation_apps/include -I/usr/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib -lsegbot_simulation_apps
+Requires: bwi_msgs bwi_planning_common bwi_tools gazebo_msgs geometry_msgs multi_level_map_msgs roscpp std_msgs tf

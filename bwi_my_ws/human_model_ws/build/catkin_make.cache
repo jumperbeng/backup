@@ -1,0 +1,2 @@
+human_model
+-DCATKIN_DEVEL_PREFIX=/home/jumper/Documents/bwi_my_ws/human_model_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jumper/Documents/bwi_my_ws/human_model_ws/install -G Unix Makefiles

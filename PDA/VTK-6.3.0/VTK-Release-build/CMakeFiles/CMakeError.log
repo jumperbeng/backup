@@ -1,0 +1,1805 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2480091625/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2480091625.dir/build.make CMakeFiles/cmTryCompileExec2480091625.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2480091625.dir/TestEndianess.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2480091625.dir/TestEndianess.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2480091625
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2480091625.dir/link.txt --verbose=1
+/usr/bin/cc        CMakeFiles/cmTryCompileExec2480091625.dir/TestEndianess.c.o  -o cmTryCompileExec2480091625 -rdynamic 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2699691539/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2699691539.dir/build.make CMakeFiles/cmTryCompileExec2699691539.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2699691539.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2699691539.dir/CheckSymbolExists.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2699691539
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2699691539.dir/link.txt --verbose=1
+/usr/bin/cc        CMakeFiles/cmTryCompileExec2699691539.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2699691539 -rdynamic 
+CMakeFiles/cmTryCompileExec2699691539.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2699691539] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2699691539/fast] Error 2
+
+File /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3444176973/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3444176973.dir/build.make CMakeFiles/cmTryCompileExec3444176973.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3444176973.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3444176973.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3444176973
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3444176973.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3444176973.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3444176973 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3444176973] Error 1
+make: *** [cmTryCompileExec3444176973/fast] Error 2
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2658099630/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2658099630.dir/build.make CMakeFiles/cmTryCompileExec2658099630.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2658099630.dir/VTK_SIZEOF___INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2658099630.dir/VTK_SIZEOF___INT64.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2658099630.dir/VTK_SIZEOF___INT64.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2658099630/fast] Error 2
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function getsockname exists in the socket failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1647710522/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1647710522.dir/build.make CMakeFiles/cmTryCompileExec1647710522.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1647710522.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTryCompileExec1647710522.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1647710522
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1647710522.dir/link.txt --verbose=1
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getsockname    CMakeFiles/cmTryCompileExec1647710522.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1647710522 -rdynamic -lsocket 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1647710522] Error 1
+make: *** [cmTryCompileExec1647710522/fast] Error 2
+
+
+Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2672591642/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2672591642.dir/build.make CMakeFiles/cmTryCompileExec2672591642.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2672591642.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT  -o CMakeFiles/cmTryCompileExec2672591642.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:256:25: error: no matching function for call to ‘std::allocator<char>::max_size(long unsigned int) const’
+   a.max_size(sizeof(int));
+                         ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:256:25: note: candidate is:
+In file included from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.8/bits/allocator.h:46,
+                 from /usr/include/c++/4.8/memory:63,
+                 from /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:253:
+/usr/include/c++/4.8/ext/new_allocator.h:113:7: note: __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int]
+       max_size() const _GLIBCXX_USE_NOEXCEPT
+       ^
+/usr/include/c++/4.8/ext/new_allocator.h:113:7: note:   candidate expects 0 arguments, 1 provided
+make[1]: *** [CMakeFiles/cmTryCompileExec2672591642.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2672591642/fast] Error 2
+
+
+Checking whether "<>" is needed for template friends failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1244708678/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1244708678.dir/build.make CMakeFiles/cmTryCompileExec1244708678.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1244708678.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS  -o CMakeFiles/cmTryCompileExec1244708678.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function [-Wnon-template-friend]
+   friend int f(A<T>&);
+                     ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:141:21: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In instantiation of ‘int f(A<T>&) [with T = int]’:
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:147:23:   required from here
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:143:7: error: ‘int A<int>::x’ is private
+   int x;
+       ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:146:48: error: within this context
+ template <class T> int f(A<T>& a) { return a.x = 0; }
+                                                ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1244708678.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1244708678/fast] Error 2
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2940783209/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2940783209.dir/build.make CMakeFiles/cmTryCompileExec2940783209.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2940783209.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS___INT64  -o CMakeFiles/cmTryCompileExec2940783209.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:126:1: error: ‘__int64’ does not name a type
+ __int64 f(__int64 n) { return n; }
+ ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:129:3: error: ‘__int64’ was not declared in this scope
+   __int64 n = 0;
+   ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:129:11: error: expected ‘;’ before ‘n’
+   __int64 n = 0;
+           ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:29: error: ‘n’ was not declared in this scope
+   return static_cast<int>(f(n));
+                             ^
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:130:30: error: ‘f’ was not declared in this scope
+   return static_cast<int>(f(n));
+                              ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2940783209.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2940783209/fast] Error 2
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2296137329/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2296137329.dir/build.make CMakeFiles/cmTryCompileExec2296137329.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2296137329.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2296137329.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2296137329.dir/KWSYS_SIZEOF___INT64.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2296137329/fast] Error 2
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec243933075/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec243933075.dir/build.make CMakeFiles/cmTryCompileExec243933075.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec243933075.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -o CMakeFiles/cmTryCompileExec243933075.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:450:13: error: ‘environ’ was not declared in this scope
+   char* e = environ[0];
+             ^
+make[1]: *** [CMakeFiles/cmTryCompileExec243933075.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec243933075/fast] Error 2
+
+
+Checking whether CXX compiler has _atoi64 failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2500302095/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2500302095.dir/build.make CMakeFiles/cmTryCompileExec2500302095.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2500302095.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/c++   -DTEST_KWSYS_CXX_HAS__ATOI64  -o CMakeFiles/cmTryCompileExec2500302095.dir/kwsysPlatformTestsCXX.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/KWSys/vtksys/kwsysPlatformTestsCXX.cxx:493:38: error: ‘_atoi64’ was not declared in this scope
+   return static_cast<int>(_atoi64(str));
+                                      ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2500302095.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Utilities/KWSys/vtksys/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2500302095/fast] Error 2
+
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1502565961/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1502565961.dir/build.make CMakeFiles/cmTryCompileExec1502565961.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1502565961.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1502565961.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:21: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+                     ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1502565961.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1502565961/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1988761603/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1988761603.dir/build.make CMakeFiles/cmTryCompileExec1988761603.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1988761603.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1988761603.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+                    ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1988761603.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1988761603/fast] Error 2
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(){return 0;}
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1025339639/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1025339639.dir/build.make CMakeFiles/cmTryCompileExec1025339639.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1025339639.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTryCompileExec1025339639.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1025339639
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1025339639.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTryCompileExec1025339639.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1025339639 -rdynamic 
+CMakeFiles/cmTryCompileExec1025339639.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1025339639] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1025339639/fast] Error 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3845156532/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3845156532.dir/build.make CMakeFiles/cmTryCompileExec3845156532.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3845156532.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTryCompileExec3845156532.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3845156532
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3845156532.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=pow    CMakeFiles/cmTryCompileExec3845156532.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3845156532 -rdynamic 
+CMakeFiles/cmTryCompileExec3845156532.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3845156532] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3845156532/fast] Error 2
+
+
+Determining if the function sqrt exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec973657884/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec973657884.dir/build.make CMakeFiles/cmTryCompileExec973657884.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec973657884.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTryCompileExec973657884.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec973657884
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec973657884.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=sqrt    CMakeFiles/cmTryCompileExec973657884.dir/CheckFunctionExists.c.o  -o cmTryCompileExec973657884 -rdynamic 
+CMakeFiles/cmTryCompileExec973657884.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec973657884] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec973657884/fast] Error 2
+
+
+Determining if the function WSAStartup exists in the ws2_32;m;dl failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3338188201/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3338188201.dir/build.make CMakeFiles/cmTryCompileExec3338188201.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3338188201.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup   -o CMakeFiles/cmTryCompileExec3338188201.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3338188201
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3338188201.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=WSAStartup    CMakeFiles/cmTryCompileExec3338188201.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3338188201 -rdynamic -lws2_32 -lm -ldl 
+/usr/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3338188201] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3338188201/fast] Error 2
+
+
+Determining if the function gethostbyname exists in the wsock32;m;dl failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1682353377/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1682353377.dir/build.make CMakeFiles/cmTryCompileExec1682353377.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1682353377.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1682353377.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1682353377
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1682353377.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1682353377.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1682353377 -rdynamic -lwsock32 -lm -ldl 
+/usr/bin/ld: cannot find -lwsock32
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1682353377] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1682353377/fast] Error 2
+
+
+Determining if the function gethostname exists in the ucb;m;dl failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec867884908/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec867884908.dir/build.make CMakeFiles/cmTryCompileExec867884908.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec867884908.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTryCompileExec867884908.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec867884908
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec867884908.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gethostname    CMakeFiles/cmTryCompileExec867884908.dir/CheckFunctionExists.c.o  -o cmTryCompileExec867884908 -rdynamic -lucb -lm -ldl 
+/usr/bin/ld: cannot find -lucb
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec867884908] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec867884908/fast] Error 2
+
+
+Determining if the function connect exists in the socket;m;dl failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1166775788/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1166775788.dir/build.make CMakeFiles/cmTryCompileExec1166775788.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1166775788.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1166775788.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1166775788
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1166775788.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1166775788.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1166775788 -rdynamic -lsocket -lm -ldl 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1166775788] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1166775788/fast] Error 2
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1256646820/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1256646820.dir/build.make CMakeFiles/cmTryCompileExec1256646820.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1256646820.dir/TestEndianess.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1256646820.dir/TestEndianess.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec1256646820
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1256646820.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w     CMakeFiles/cmTryCompileExec1256646820.dir/TestEndianess.c.o  -o cmTryCompileExec1256646820 -rdynamic 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function clock_gettime exists in the posix4 failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2255051481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2255051481.dir/build.make CMakeFiles/cmTryCompileExec2255051481.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2255051481.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTryCompileExec2255051481.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2255051481
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2255051481.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTryCompileExec2255051481.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2255051481 -rdynamic -lposix4 -lm -ldl 
+/usr/bin/ld: cannot find -lposix4
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2255051481] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2255051481/fast] Error 2
+
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;mach/mach_time.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1475120814/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1475120814.dir/build.make CMakeFiles/cmTryCompileExec1475120814.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1475120814.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec1475120814.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:28: fatal error: mach/mach_time.h: No such file or directory
+ #include <mach/mach_time.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1475120814.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1475120814/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <mach/mach_time.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;io.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3048420536/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3048420536.dir/build.make CMakeFiles/cmTryCompileExec3048420536.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3048420536.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec3048420536.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:16: fatal error: io.h: No such file or directory
+ #include <io.h>
+                ^
+compilation terminated.
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3048420536.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec3048420536/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <io.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;winsock2.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec795160612/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec795160612.dir/build.make CMakeFiles/cmTryCompileExec795160612.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec795160612.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec795160612.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:14:22: fatal error: winsock2.h: No such file or directory
+ #include <winsock2.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec795160612.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec795160612/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <winsock2.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;globus/common.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3256114933/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3256114933.dir/build.make CMakeFiles/cmTryCompileExec3256114933.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3256114933.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec3256114933.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:27: fatal error: globus/common.h: No such file or directory
+ #include <globus/common.h>
+                           ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3256114933.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3256114933/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <globus/common.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pdb.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2150386804/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2150386804.dir/build.make CMakeFiles/cmTryCompileExec2150386804.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2150386804.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec2150386804.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:17: fatal error: pdb.h: No such file or directory
+ #include <pdb.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2150386804.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2150386804/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pdb.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/resource.h;sys/time.h;unistd.h;sys/ioctl.h;sys/stat.h;sys/socket.h;sys/types.h;stddef.h;setjmp.h;features.h;dirent.h;stdint.h;sys/timeb.h;pthread.h;srbclient.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3898008778/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3898008778.dir/build.make CMakeFiles/cmTryCompileExec3898008778.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3898008778.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec3898008778.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:16:23: fatal error: srbclient.h: No such file or directory
+ #include <srbclient.h>
+                       ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3898008778.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3898008778/fast] Error 2
+
+Source:
+/* */
+#include <sys/resource.h>
+#include <sys/time.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <sys/stat.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <stddef.h>
+#include <setjmp.h>
+#include <features.h>
+#include <dirent.h>
+#include <stdint.h>
+#include <sys/timeb.h>
+#include <pthread.h>
+#include <srbclient.h>
+
+
+int main(){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec219188200/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec219188200.dir/build.make CMakeFiles/cmTryCompileExec219188200.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec219188200.dir/H5_SIZEOF___INT64.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec219188200.dir/H5_SIZEOF___INT64.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:17:22: error: ‘__int64’ undeclared here (not in a function)
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: *** [CMakeFiles/cmTryCompileExec219188200.dir/H5_SIZEOF___INT64.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec219188200/fast] Error 2
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the variable CLOCK_MONOTONIC exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1113834613/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1113834613.dir/build.make CMakeFiles/cmTryCompileExec1113834613.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1113834613.dir/CheckVariableExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC   -o CMakeFiles/cmTryCompileExec1113834613.dir/CheckVariableExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckVariableExists.c
+Linking C executable cmTryCompileExec1113834613
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1113834613.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_VARIABLE_EXISTS=CLOCK_MONOTONIC    CMakeFiles/cmTryCompileExec1113834613.dir/CheckVariableExists.c.o  -o cmTryCompileExec1113834613 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec1113834613.dir/CheckVariableExists.c.o: In function `main':
+CheckVariableExists.c:(.text+0x25): undefined reference to `CLOCK_MONOTONIC'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1113834613] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1113834613/fast] Error 2
+
+
+Performing Other Test HAVE___TM_GMTOFF failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec19559910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec19559910.dir/build.make CMakeFiles/cmTryCompileExec19559910.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec19559910.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE___TM_GMTOFF  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec19559910.dir/HDF5Tests.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:191:29: error: ‘struct tm’ has no member named ‘__tm_gmtoff’
+ SIMPLE_TEST(struct tm tm; tm.__tm_gmtoff=0);
+                             ^
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec19559910.dir/HDF5Tests.c.o] Error 1
+make: *** [cmTryCompileExec19559910/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_VIDEOCONFIG failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec579595857/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec579595857.dir/build.make CMakeFiles/cmTryCompileExec579595857.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec579595857.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_VIDEOCONFIG  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec579595857.dir/HDF5Tests.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:474:32: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct videoconfig w; w.numtextcols=0);
+                                ^
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: *** [CMakeFiles/cmTryCompileExec579595857.dir/HDF5Tests.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec579595857/fast] Error 2
+
+Performing Other Test HAVE_STRUCT_TEXT_INFO failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1335909341/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1335909341.dir/build.make CMakeFiles/cmTryCompileExec1335909341.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1335909341.dir/HDF5Tests.c.o
+/usr/bin/cc   -w -w -DHAVE_STRUCT_TEXT_INFO  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec1335909341.dir/HDF5Tests.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:480:30: error: storage size of ‘w’ isn’t known
+ SIMPLE_TEST(struct text_info w; w.screenwidth=0);
+                              ^
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1335909341.dir/HDF5Tests.c.o] Error 1
+make: *** [cmTryCompileExec1335909341/fast] Error 2
+
+Determining if the function _getvideoconfig exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4092215028/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4092215028.dir/build.make CMakeFiles/cmTryCompileExec4092215028.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4092215028.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig   -o CMakeFiles/cmTryCompileExec4092215028.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4092215028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4092215028.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_getvideoconfig    CMakeFiles/cmTryCompileExec4092215028.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4092215028 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec4092215028.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_getvideoconfig'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4092215028] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4092215028/fast] Error 2
+
+
+Determining if the function gettextinfo exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2192529148/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2192529148.dir/build.make CMakeFiles/cmTryCompileExec2192529148.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2192529148.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo   -o CMakeFiles/cmTryCompileExec2192529148.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2192529148
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2192529148.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=gettextinfo    CMakeFiles/cmTryCompileExec2192529148.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2192529148 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec2192529148.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `gettextinfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2192529148] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2192529148/fast] Error 2
+
+
+Determining if the function _scrsize exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1996958137/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1996958137.dir/build.make CMakeFiles/cmTryCompileExec1996958137.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1996958137.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=_scrsize   -o CMakeFiles/cmTryCompileExec1996958137.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1996958137
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1996958137.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=_scrsize    CMakeFiles/cmTryCompileExec1996958137.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1996958137 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec1996958137.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_scrsize'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1996958137] Error 1
+make: *** [cmTryCompileExec1996958137/fast] Error 2
+
+
+Determining if the function GetConsoleScreenBufferInfo exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2688867093/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2688867093.dir/build.make CMakeFiles/cmTryCompileExec2688867093.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2688867093.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo   -o CMakeFiles/cmTryCompileExec2688867093.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2688867093
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2688867093.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=GetConsoleScreenBufferInfo    CMakeFiles/cmTryCompileExec2688867093.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2688867093 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec2688867093.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `GetConsoleScreenBufferInfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2688867093] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2688867093/fast] Error 2
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec620776347/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec620776347.dir/build.make CMakeFiles/cmTryCompileExec620776347.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec620776347.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTryCompileExec620776347.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec620776347
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec620776347.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=setsysinfo    CMakeFiles/cmTryCompileExec620776347.dir/CheckFunctionExists.c.o  -o cmTryCompileExec620776347 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec620776347.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec620776347] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec620776347/fast] Error 2
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2981784286/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2981784286.dir/build.make CMakeFiles/cmTryCompileExec2981784286.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2981784286.dir/CheckFunctionExists.c.o
+/usr/bin/cc  -D_BSD_SOURCE -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTryCompileExec2981784286.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2981784286
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2981784286.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=sigsetjmp    CMakeFiles/cmTryCompileExec2981784286.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2981784286 -rdynamic -lm -ldl 
+CMakeFiles/cmTryCompileExec2981784286.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2981784286] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2981784286/fast] Error 2
+
+
+Performing CXX Test OLD_HEADER_FILENAME failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1641985839/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1641985839.dir/build.make CMakeFiles/cmTryCompileExec1641985839.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1641985839.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec1641985839.dir/HDF5CXXTests.cpp.o -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec1641985839
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1641985839.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DOLD_HEADER_FILENAME  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec1641985839.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec1641985839 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test H5_NO_NAMESPACE failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2916297372/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2916297372.dir/build.make CMakeFiles/cmTryCompileExec2916297372.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2916297372.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec2916297372.dir/HDF5CXXTests.cpp.o -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec2916297372
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2916297372.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DH5_NO_NAMESPACE  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec2916297372.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec2916297372 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test H5_NO_STD failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3175245312/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3175245312.dir/build.make CMakeFiles/cmTryCompileExec3175245312.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3175245312.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec3175245312.dir/HDF5CXXTests.cpp.o -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec3175245312
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3175245312.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DH5_NO_STD  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec3175245312.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec3175245312 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test BOOL_NOTDEFINED failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4206441961/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4206441961.dir/build.make CMakeFiles/cmTryCompileExec4206441961.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4206441961.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec4206441961.dir/HDF5CXXTests.cpp.o -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec4206441961
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4206441961.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DBOOL_NOTDEFINED  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec4206441961.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec4206441961 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Performing CXX Test NO_STATIC_CAST failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1791389260/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1791389260.dir/build.make CMakeFiles/cmTryCompileExec1791389260.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1791389260.dir/HDF5CXXTests.cpp.o
+/usr/bin/c++    -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE   -o CMakeFiles/cmTryCompileExec1791389260.dir/HDF5CXXTests.cpp.o -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/HDF5CXXTests.cpp
+Linking CXX executable cmTryCompileExec1791389260
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1791389260.dir/link.txt --verbose=1
+/usr/bin/c++     -w -w -DNO_STATIC_CAST  -DHAVE_SYS_TIME_H -DHAVE_UNISTD_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_SOCKET_H -D_FILE_OFFSET_BITS=64 -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE    CMakeFiles/cmTryCompileExec1791389260.dir/HDF5CXXTests.cpp.o  -o cmTryCompileExec1791389260 -rdynamic -lm -ldl 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec961702227/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec961702227.dir/build.make CMakeFiles/cmTryCompileExec961702227.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec961702227.dir/ConversionTests.c.o
+/usr/bin/cc   -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTryCompileExec961702227.dir/ConversionTests.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/hdf5/vtkhdf5/config/cmake/ConversionTests.c
+Linking C executable cmTryCompileExec961702227
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec961702227.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    CMakeFiles/cmTryCompileExec961702227.dir/ConversionTests.c.o  -o cmTryCompileExec961702227 -rdynamic 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/hdf5/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Determining size of uchar failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3321836013/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3321836013.dir/build.make CMakeFiles/cmTryCompileExec3321836013.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3321836013.dir/SIZEOF_UCHAR.c.o
+/usr/bin/cc   -w -w    -o CMakeFiles/cmTryCompileExec3321836013.dir/SIZEOF_UCHAR.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:17:22: error: ‘uchar’ undeclared here (not in a function)
+ #define SIZE (sizeof(uchar))
+                      ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+make[1]: *** [CMakeFiles/cmTryCompileExec3321836013.dir/SIZEOF_UCHAR.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3321836013/fast] Error 2
+
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test GLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3161429941/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3161429941.dir/build.make CMakeFiles/cmTryCompileExec3161429941.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3161429941.dir/src.c.o
+/usr/bin/cc   -DGLX_DEFINES_TYPE_GLXextFuncPtr_AS_EMPTY   -o CMakeFiles/cmTryCompileExec3161429941.dir/src.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘f’
+  f(x); /* fails if prototype is void, pass if prototype is empty. */
+  ^
+make[1]: *** [CMakeFiles/cmTryCompileExec3161429941.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3161429941/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ __GLXextFuncPtr f;
+ int x;
+ f(x); /* fails if prototype is void, pass if prototype is empty. */
+
+ return 0;
+}
+
+Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1190935253/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1190935253.dir/build.make CMakeFiles/cmTryCompileExec1190935253.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1190935253.dir/src.c.o
+/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddressARB_AS_EMPTY   -o CMakeFiles/cmTryCompileExec1190935253.dir/src.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddressARB((const GLubyte *)"aRandomFunction")’
+  glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
+  ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1190935253.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1190935253/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ int x;
+ /* fails if prototype is void, pass if prototype is empty. */
+ glXGetProcAddressARB((const GLubyte *)("aRandomFunction"))(x);
+ return 0;
+}
+
+Performing C SOURCE FILE Test GLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec36047330/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec36047330.dir/build.make CMakeFiles/cmTryCompileExec36047330.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec36047330.dir/src.c.o
+/usr/bin/cc   -DGLX_DECLARES_FUNCTION_glXGetProcAddress_AS_EMPTY   -o CMakeFiles/cmTryCompileExec36047330.dir/src.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/src.c:8:2: error: too many arguments to function ‘glXGetProcAddress((const GLubyte *)"aRandomFunction")’
+  glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
+  ^
+make[1]: *** [CMakeFiles/cmTryCompileExec36047330.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec36047330/fast] Error 2
+
+Source file was:
+
+#define GLX_GLXEXT_LEGACY
+#include <GL/glx.h>
+int main()
+{
+ int x;
+ /* fails if prototype is void, pass if prototype is empty. */
+ glXGetProcAddress((const GLubyte *)("aRandomFunction"))(x);
+ return 0;
+}
+
+Determining if the function shl_load exists in the dld;dl failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec318900284/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec318900284.dir/build.make CMakeFiles/cmTryCompileExec318900284.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec318900284.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -w -w -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTryCompileExec318900284.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec318900284
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec318900284.dir/link.txt --verbose=1
+/usr/bin/cc    -w -w -DCHECK_FUNCTION_EXISTS=shl_load    CMakeFiles/cmTryCompileExec318900284.dir/CheckFunctionExists.c.o  -o cmTryCompileExec318900284 -rdynamic -ldld -ldl 
+/usr/bin/ld: cannot find -ldld
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec318900284] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec318900284/fast] Error 2
+
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;ansidecl.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2762532865/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2762532865.dir/build.make CMakeFiles/cmTryCompileExec2762532865.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2762532865.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2762532865.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:25:22: fatal error: ansidecl.h: No such file or directory
+ #include <ansidecl.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2762532865.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2762532865/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <ansidecl.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;dl.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2873533994/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2873533994.dir/build.make CMakeFiles/cmTryCompileExec2873533994.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2873533994.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec2873533994.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:16: fatal error: dl.h: No such file or directory
+ #include <dl.h>
+                ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2873533994.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2873533994/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <dl.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;fp_class.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec303998498/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec303998498.dir/build.make CMakeFiles/cmTryCompileExec303998498.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec303998498.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec303998498.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:22: fatal error: fp_class.h: No such file or directory
+ #include <fp_class.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec303998498.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec303998498/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <fp_class.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3452990212/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3452990212.dir/build.make CMakeFiles/cmTryCompileExec3452990212.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3452990212.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec3452990212.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:17: fatal error: nan.h: No such file or directory
+ #include <nan.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3452990212.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3452990212/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <nan.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;ndir.h exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1164745132/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1164745132.dir/build.make CMakeFiles/cmTryCompileExec1164745132.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1164745132.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec1164745132.dir/CheckIncludeFiles.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:18: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1164745132.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1164745132/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <ndir.h>
+
+
+int main(){return 0;}
+
+Determining if the fpclass exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec246917699/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec246917699.dir/build.make CMakeFiles/cmTryCompileExec246917699.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec246917699.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec246917699.dir/CheckSymbolExists.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function)
+   return ((int*)(&fpclass))[argc];
+                   ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec246917699.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec246917699/fast] Error 2
+
+File /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fpclass
+  return ((int*)(&fpclass))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fp_class exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4154423422/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4154423422.dir/build.make CMakeFiles/cmTryCompileExec4154423422.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4154423422.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec4154423422.dir/CheckSymbolExists.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function)
+   return ((int*)(&fp_class))[argc];
+                   ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4154423422.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec4154423422/fast] Error 2
+
+File /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fp_class
+  return ((int*)(&fp_class))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _stat exist failed with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1009741236/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1009741236.dir/build.make CMakeFiles/cmTryCompileExec1009741236.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1009741236.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -D_GNU_SOURCE -w -w    -o CMakeFiles/cmTryCompileExec1009741236.dir/CheckSymbolExists.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function)
+   return ((int*)(&_stat))[argc];
+                   ^
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec1009741236.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1009741236/fast] Error 2
+
+File /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stat
+  return ((int*)(&_stat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for DIR in sys/ndir.h failed to compile with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2261515/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2261515.dir/build.make CMakeFiles/cmTryCompileExec2261515.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2261515.dir/platformTestsC.c.o
+/usr/bin/cc  -DTEST_HAVE_SYS_NDIR_H -w -w    -o CMakeFiles/cmTryCompileExec2261515.dir/platformTestsC.c.o   -c /home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/libxml2/vtklibxml2/platformTestsC.c:82:22: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/ThirdParty/libxml2/vtklibxml2/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2261515.dir/platformTestsC.c.o] Error 1
+make: *** [cmTryCompileExec2261515/fast] Error 2
+
+

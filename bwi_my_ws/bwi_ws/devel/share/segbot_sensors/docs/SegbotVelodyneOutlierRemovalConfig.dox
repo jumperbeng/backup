@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~support_struct_angle" : \b [double] Angle between 0 and pi/4, representing cutoff point for support structure for support beam. min: 0.0, default: 0.6362, max: 0.785398
+- \b "~wire_conduit_angle" : \b [double] Angle between 0 and pi/4, representing cutoff point induced by wire conduit. Should be typically slightly less than support_struct_angle min: 0.0, default: 0.6126, max: 0.785398
+- \b "~range" : \b [double] Remove points up to this range. min: 0.4, default: 1.75, max: 130.0
+

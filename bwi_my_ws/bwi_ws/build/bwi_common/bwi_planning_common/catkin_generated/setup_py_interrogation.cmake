@@ -1,0 +1,6 @@
+set(bwi_planning_common_SETUP_PY_VERSION "0.3.12")
+set(bwi_planning_common_SETUP_PY_SCRIPTS "")
+set(bwi_planning_common_SETUP_PY_PACKAGES "bwi_planning_common")
+set(bwi_planning_common_SETUP_PY_PACKAGE_DIRS "src/bwi_planning_common")
+set(bwi_planning_common_SETUP_PY_MODULES "")
+set(bwi_planning_common_SETUP_PY_MODULE_DIRS "")

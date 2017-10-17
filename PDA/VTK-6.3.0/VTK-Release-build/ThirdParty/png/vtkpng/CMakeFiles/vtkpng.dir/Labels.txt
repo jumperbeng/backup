@@ -1,0 +1,20 @@
+# Target labels
+ vtkpng
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngget.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngrio.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngwrite.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/png.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngmem.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngrtran.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngtrans.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngwtran.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngerror.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngpread.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngrutil.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngvcrd.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngwutil.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pnggccrd.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngread.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngset.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/png/vtkpng/pngwio.c

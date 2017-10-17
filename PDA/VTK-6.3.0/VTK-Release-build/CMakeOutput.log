@@ -1,0 +1,15 @@
+Determining if glXGetProcAddressARB exists in GL/glx.h TRUE with the following output:
+Change Dir: /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2922701635/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2922701635.dir/build.make CMakeFiles/cmTryCompileExec2922701635.dir/build
+make[1]: Entering directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2922701635.dir/CheckglXGetProcAddressARB.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2922701635.dir/CheckglXGetProcAddressARB.cxx.o -c /home/jumper/Documents/PDA/VTK-6.3.0/Rendering/OpenGL/CheckglXGetProcAddressARB.cxx
+Linking CXX executable cmTryCompileExec2922701635
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2922701635.dir/link.txt --verbose=1
+/usr/bin/c++         CMakeFiles/cmTryCompileExec2922701635.dir/CheckglXGetProcAddressARB.cxx.o  -o cmTryCompileExec2922701635 -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -lpthread -lm 
+make[1]: Leaving directory `/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/CMakeFiles/CMakeTmp'
+
+

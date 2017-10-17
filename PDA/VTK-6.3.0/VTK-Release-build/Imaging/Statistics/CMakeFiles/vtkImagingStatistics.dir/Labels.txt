@@ -1,0 +1,10 @@
+# Target labels
+ vtkImagingStatistics
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageAccumulate.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageHistogram.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageHistogramStatistics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageAccumulate.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageHistogram.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Statistics/vtkImageHistogramStatistics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Statistics/vtkImagingStatisticsModule.h

@@ -1,0 +1,18 @@
+# Target labels
+ vtkImagingSources
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageCanvasSource2D.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageEllipsoidSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageGaussianSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageGridSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageMandelbrotSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageNoiseSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageSinusoidSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageCanvasSource2D.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageEllipsoidSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageGaussianSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageGridSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageMandelbrotSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageNoiseSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Sources/vtkImageSinusoidSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Sources/vtkImagingSourcesModule.h

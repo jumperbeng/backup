@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/proj_v3_ws/install
+
+Name: sn3
+Description: Description of sn3
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/proj_v3_ws/install/lib 
+Requires: 

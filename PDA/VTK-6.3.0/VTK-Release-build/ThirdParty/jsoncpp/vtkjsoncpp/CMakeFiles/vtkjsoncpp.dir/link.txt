@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -w -w -w -O3 -DNDEBUG  -Wl,--no-undefined -lc    -shared -Wl,-soname,libvtkjsoncpp-6.3.so.1 -o ../../../lib/libvtkjsoncpp-6.3.so.1 CMakeFiles/vtkjsoncpp.dir/json_reader.cpp.o CMakeFiles/vtkjsoncpp.dir/json_value.cpp.o CMakeFiles/vtkjsoncpp.dir/json_writer.cpp.o 

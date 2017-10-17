@@ -1,0 +1,6 @@
+set(bwi_rqt_plugins_SETUP_PY_VERSION "0.3.12")
+set(bwi_rqt_plugins_SETUP_PY_SCRIPTS "")
+set(bwi_rqt_plugins_SETUP_PY_PACKAGES "bwi_rqt_plugins")
+set(bwi_rqt_plugins_SETUP_PY_PACKAGE_DIRS "src/bwi_rqt_plugins")
+set(bwi_rqt_plugins_SETUP_PY_MODULES "")
+set(bwi_rqt_plugins_SETUP_PY_MODULE_DIRS "")

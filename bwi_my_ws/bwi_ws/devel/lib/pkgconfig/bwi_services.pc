@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: bwi_services
+Description: Description of bwi_services
+Version: 0.3.12
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib 
+Requires: actionlib bwi_kr_execution message_runtime roscpp std_msgs

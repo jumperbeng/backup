@@ -1,0 +1,10 @@
+(cl:defpackage multi_level_map_msgs-srv
+  (:use )
+  (:export
+   "CHANGECURRENTLEVEL"
+   "<CHANGECURRENTLEVEL-REQUEST>"
+   "CHANGECURRENTLEVEL-REQUEST"
+   "<CHANGECURRENTLEVEL-RESPONSE>"
+   "CHANGECURRENTLEVEL-RESPONSE"
+  ))
+

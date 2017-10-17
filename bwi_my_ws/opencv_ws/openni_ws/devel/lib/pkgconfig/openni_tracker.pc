@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/opencv_ws/openni_ws/devel
+
+Name: openni_tracker
+Description: Description of openni_tracker
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/opencv_ws/openni_ws/devel/lib 
+Requires: 

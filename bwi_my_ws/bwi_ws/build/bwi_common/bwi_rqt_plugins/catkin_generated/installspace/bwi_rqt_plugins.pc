@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: bwi_rqt_plugins
+Description: Description of bwi_rqt_plugins
+Version: 0.3.12
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/install/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib -lbwi_rqt_plugins
+Requires: bwi_msgs class_loader cv_bridge image_transport rqt_gui rqt_gui_cpp sensor_msgs

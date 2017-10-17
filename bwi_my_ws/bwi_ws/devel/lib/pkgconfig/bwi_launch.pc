@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: bwi_launch
+Description: Description of bwi_launch
+Version: 0.3.3
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib 
+Requires: 

@@ -1,0 +1,2 @@
+sn3
+-DCATKIN_DEVEL_PREFIX=/home/jumper/Documents/bwi_my_ws/proj_v3_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jumper/Documents/bwi_my_ws/proj_v3_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: bwi_kr_execution
+Description: Description of bwi_kr_execution
+Version: 0.3.12
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/include -I/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_kr_execution/actasp/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib -lactasp
+Requires: actionlib_msgs bwi_msgs message_runtime roscpp sound_play std_msgs std_srvs

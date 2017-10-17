@@ -1,0 +1,27 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~teleop_vel_limit_mps" : \b [double] Maximum velocity in m/s for teleop min: 0.0, default: 0.5, max: 8.0
+- \b "~teleop_accel_limit_mps2" : \b [double] Maximum velocity in m/s for teleop min: 0.05, default: 0.5, max: 7.848
+- \b "~teleop_yaw_rate_limit_rps" : \b [double] Maximum yaw_rate in rad/s for teleop min: 0.0, default: 1.0, max: 4.5
+- \b "~teleop_yaw_accel_limit_rps2" : \b [double] Maximum yaw acceleration in rad/s^2 for teleop min: 0.063, default: 1.0, max: 28.274
+- \b "~vel_limit_mps" : \b [double] Maximum velocity in m/s for RMP min: 0.0, default: 1.0, max: 8.0
+- \b "~accel_limit_mps2" : \b [double] Maximum acceleration in m/s^2 for RMP min: 0.05, default: 0.5, max: 7.848
+- \b "~decel_limit_mps2" : \b [double] Maximum deceleration in m/s^2 for RMP min: 0.05, default: 0.5, max: 7.848
+- \b "~dtz_decel_limit_mps2" : \b [double] Maximum emergency DTZ deceleration in m/s^2 for RMP min: 0.981, default: 1.0, max: 7.848
+- \b "~yaw_rate_limit_rps" : \b [double] Maximum yaw rate in rad/s for RMP min: 0.01, default: 1.0, max: 4.5
+- \b "~yaw_accel_limit_rps2" : \b [double] Maximum yaw acceleration in rad/s^2 for RMP min: 0.063, default: 1.0, max: 28.274
+- \b "~lateral_accel_limit_mps2" : \b [double] Maximum lateral acceleration in m/s^2 for RMP min: 0.981, default: 4.905, max: 9.81
+- \b "~tire_rolling_diameter_m" : \b [double] Tire rolling diameter in m for RMP min: 0.05, default: 0.46228, max: 1.0
+- \b "~wheel_base_length_m" : \b [double] Distance between front and rear contact patch in m for RMP min: 0.4142, default: 0.5842, max: 1.0
+- \b "~wheel_track_width_m" : \b [double] Distance between left and right contact patch in m for RMP min: 0.3556, default: 0.569976, max: 1.0
+- \b "~gear_ratio" : \b [double] Input to ouput gear ratio for RMP min: 1.0, default: 24.2667, max: 200.0
+- \b "~enable_audio" : \b [bool] Check to enable audio min: False, default: True, max: True
+- \b "~motion_while_charging" : \b [bool] Allow motion with charger connected min: False, default: False, max: True
+- \b "~balance_mode_enabled" : \b [bool] Allow transition to balance mode; only for RMP220 min: False, default: False, max: True
+- \b "~balace_gains" : \b [int] Balance Gain Schedule min: -2147483648, default: 0, max: 2147483647
+- \b "~vel_ctl_input_filter" : \b [int] Velocity Input Filter Cutoff min: -2147483648, default: 0, max: 2147483647
+- \b "~yaw_ctl_input_filter" : \b [int] Yaw Input Filter Cutoff min: -2147483648, default: 0, max: 2147483647
+- \b "~torqe_limit" : \b [double] Limits peak torque from from system 0-100% of system capability min: 0.0, default: 100.0, max: 100.0
+

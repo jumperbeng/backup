@@ -1,0 +1,14 @@
+# Target labels
+ vtkIOImport
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtk3DSImporter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkImporter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkVRMLImporter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkOBJImporter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkOBJImporterInternals.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtk3DSImporter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkImporter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkVRMLImporter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkOBJImporter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/IO/Import/vtkOBJImporterInternals.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/IO/Import/vtkIOImportModule.h

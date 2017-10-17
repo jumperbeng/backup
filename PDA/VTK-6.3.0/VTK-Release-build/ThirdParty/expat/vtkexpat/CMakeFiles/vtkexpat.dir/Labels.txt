@@ -1,0 +1,6 @@
+# Target labels
+ vtkexpat
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/expat/vtkexpat/xmlparse.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/expat/vtkexpat/xmltok.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/expat/vtkexpat/xmlrole.c

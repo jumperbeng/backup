@@ -1,0 +1,4 @@
+# Target labels
+ vtkUtilitiesEncodeString
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/EncodeString/vtkEncodeString.cxx

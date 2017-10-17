@@ -1,0 +1,28 @@
+<package>
+  <name>segbot_description</name>
+  <version>0.3.5</version>
+  <description>
+    Contains URDF descriptions of all robot components and sensors for the
+    segbot, as well as all the different sensor configurations for a segbot.
+  </description>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/segbot_description</url>
+  <url type="repository">https://github.com/utexas-bwi/segbot.git</url>
+  <url type="bugtracker">https://github.com/utexas-bwi/segbot/issues</url>
+
+  <author email="piyushk@gmail.com">Piyush Khandelwal</author>
+  <maintainer email="piyushk@gmail.com">Piyush Khandelwal</maintainer>
+  <maintainer email="jack.oquin@gmail.com">Jack O'Quin</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>pr2_description</run_depend> <!-- kinect mesh -->
+  <!-- segway_description commented out until segway stacks releseaed publicly -->
+  <!-- <run_depend>segway_description</run_depend> -->
+  <run_depend>velodyne_description</run_depend>
+  <run_depend>velodyne_gazebo_plugins</run_depend>
+  <run_depend>xacro</run_depend>
+
+</package>

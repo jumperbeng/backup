@@ -1,0 +1,59 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find greetbot)/launch/worlds/mw3.world"/>
+  </include>
+
+  <arg name="world" default="gazebo" />
+  <arg name="map_frame" default="map" />
+  <arg name="map_service" default="/static_map" />
+  <arg name="map_topic" default="/map" />
+  <arg name="navigation_map_topic" default="$(arg map_topic)" />
+  <arg name="x" default="0" />
+  <arg name="y" default="-5.0" />
+  <arg name="z" default="0" />
+  <arg name="roll" default="0" />
+  <arg name="pitch" default="0" />
+  <arg name="yaw" default="1.570796" />
+  <arg name="robotid" default="segbot" />
+  <arg name="tf_prefix" default="" />
+  <arg name="use_full_gazebo_model" default="true" />
+  <arg name="configuration_file" default="$(find segbot_bringup)/launch/includes/auxiliary.segbot_v1.hokuyo_only.launch.xml" />
+
+  <!-- whether to launch autonomous stuff or not -->
+  <arg name="launch_localization" default="false" />
+  <arg name="laser_max_range" default="scan_filtered" />
+  <arg name="localization_scan_topic" default="scan_filtered" />
+  <arg name="use_fake_localization" default="false" />
+  <arg name="launch_move_base" default="false" />
+  <arg name="move_base_server" default="move_base" />
+  <arg name="move_base_config" default="segbotv2" />
+
+  <!-- set tf prefix (used by gazebo plugins) -->
+  <param name="tf_prefix" value="$(arg tf_prefix)" />
+  <arg name="base_frame_id" default="$(arg tf_prefix)/base_footprint" />
+  <arg name="odom_frame_id" default="$(arg tf_prefix)/odom" />
+  <arg name="map_frame_with_prefix" default="$(arg tf_prefix)/$(arg map_frame)" />
+
+  <!-- launch robot description and robot internal tf tree, along with any common nodes between h/w and software -->
+  <include file="$(arg configuration_file)">
+    <arg name="use_full_gazebo_model" value="$(arg use_full_gazebo_model)" />
+    <arg name="tf_prefix" value="$(arg tf_prefix)" />
+  </include>
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model"
+    args="-param robot_description
+    -urdf
+    -x $(arg x)
+    -y $(arg y)
+    -z $(arg z)
+    -R $(arg roll)
+    -P $(arg pitch)
+    -Y $(arg yaw)
+    -model $(arg robotid)
+    -gazebo_namespace /$(arg world)"
+    respawn="false" output="screen">
+  </node>
+
+  <node pkg="greetbot" type="move_human" name="move_human"/>
+</launch>

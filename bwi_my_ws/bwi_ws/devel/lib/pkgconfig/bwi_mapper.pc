@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: bwi_mapper
+Description: Description of bwi_mapper
+Version: 0.3.12
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_mapper/include -I/usr/local/include -I/usr/local/include/opencv
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib -lbwi_mapper -l:/usr/local/lib/libopencv_calib3d.so.3.3.0 -l:/usr/local/lib/libopencv_core.so.3.3.0 -l:/usr/local/lib/libopencv_dnn.so.3.3.0 -l:/usr/local/lib/libopencv_features2d.so.3.3.0 -l:/usr/local/lib/libopencv_flann.so.3.3.0 -l:/usr/local/lib/libopencv_highgui.so.3.3.0 -l:/usr/local/lib/libopencv_imgcodecs.so.3.3.0 -l:/usr/local/lib/libopencv_imgproc.so.3.3.0 -l:/usr/local/lib/libopencv_ml.so.3.3.0 -l:/usr/local/lib/libopencv_objdetect.so.3.3.0 -l:/usr/local/lib/libopencv_photo.so.3.3.0 -l:/usr/local/lib/libopencv_shape.so.3.3.0 -l:/usr/local/lib/libopencv_stitching.so.3.3.0 -l:/usr/local/lib/libopencv_superres.so.3.3.0 -l:/usr/local/lib/libopencv_video.so.3.3.0 -l:/usr/local/lib/libopencv_videoio.so.3.3.0 -l:/usr/local/lib/libopencv_videostab.so.3.3.0 -l:/usr/local/lib/libopencv_viz.so.3.3.0
+Requires: map_server nav_msgs

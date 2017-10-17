@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/install
+
+Name: greetbot
+Description: Description of greetbot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/install/lib 
+Requires: 

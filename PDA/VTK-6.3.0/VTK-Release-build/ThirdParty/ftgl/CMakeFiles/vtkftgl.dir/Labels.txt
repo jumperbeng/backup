@@ -1,0 +1,18 @@
+# Target labels
+ vtkftgl
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTBitmapGlyph.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTBitmapGlyphRenderOpenGL.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTCharmap.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTFace.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTFont.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGLBitmapFont.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGLBitmapFontRenderOpenGL.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGLPixmapFont.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGLPixmapFontRenderOpenGL.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGlyph.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTGlyphContainer.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTLibrary.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTPixmapGlyph.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTPixmapGlyphRenderOpenGL.cpp
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/ftgl/src/FTSize.cpp

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^(tif|fax|port|uv|vtk|tconf|t4|mk|z).*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/mkg3states.c
+tif_config.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tif_config.h
+tif_fax3.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tif_fax3.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tif_fax3.h
+tiff.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tiff.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tiff.h
+vtk_tiff_mangle.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/vtk_tiff_mangle.h
+tiffconf.h
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tiffconf.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/tiffconf.h
+
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/tiff/vtktiff/vtk_tiff_mangle.h
+
+ThirdParty/tiff/vtktiff/tif_config.h
+

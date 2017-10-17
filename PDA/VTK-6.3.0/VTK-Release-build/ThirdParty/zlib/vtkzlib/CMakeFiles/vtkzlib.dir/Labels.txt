@@ -1,0 +1,14 @@
+# Target labels
+ vtkzlib
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/adler32.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/compress.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/crc32.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/deflate.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/gzio.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/inffast.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/inflate.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/inftrees.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/trees.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/uncompr.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/zlib/vtkzlib/zutil.c

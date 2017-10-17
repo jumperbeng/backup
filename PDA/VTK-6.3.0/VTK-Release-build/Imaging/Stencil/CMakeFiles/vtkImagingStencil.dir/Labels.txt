@@ -1,0 +1,18 @@
+# Target labels
+ vtkImagingStencil
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageStencil.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageStencilToImage.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageToImageStencil.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkLassoStencilSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkPolyDataToImageStencil.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkROIStencilSource.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageStencil.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageStencilToImage.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImageToImageStencil.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkImplicitFunctionToImageStencil.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkLassoStencilSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkPolyDataToImageStencil.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Stencil/vtkROIStencilSource.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Stencil/vtkImagingStencilModule.h

@@ -1,0 +1,8 @@
+prefix=/home/jumper/Documents/bwi_my_ws/bwi_ws/devel
+
+Name: bwi_planning_common
+Description: Description of bwi_planning_common
+Version: 0.3.12
+Cflags: -I/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/include -I/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_planning_common/include -I/usr/include
+Libs: -L/home/jumper/Documents/bwi_my_ws/bwi_ws/devel/lib -lbwi_planning_common -l:/usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+Requires: bwi_mapper bwi_tools message_runtime std_msgs

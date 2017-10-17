@@ -1,0 +1,20 @@
+# Target labels
+ vtkImagingMath
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageDivergence.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageDotProduct.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageLogarithmicScale.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageLogic.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMagnitude.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMaskBits.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMathematics.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageWeightedSum.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageDivergence.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageDotProduct.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageLogarithmicScale.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageLogic.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMagnitude.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMaskBits.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageMathematics.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Imaging/Math/vtkImageWeightedSum.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Imaging/Math/vtkImagingMathModule.h

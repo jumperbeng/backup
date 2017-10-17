@@ -1,0 +1,10 @@
+(cl:defpackage bwi_planning_common-srv
+  (:use )
+  (:export
+   "PLANNERINTERFACE"
+   "<PLANNERINTERFACE-REQUEST>"
+   "PLANNERINTERFACE-REQUEST"
+   "<PLANNERINTERFACE-RESPONSE>"
+   "PLANNERINTERFACE-RESPONSE"
+  ))
+

@@ -1,0 +1,37 @@
+# Target labels
+ vtkoggtheora
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libogg-1.1.4/src/framing.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libogg-1.1.4/src/bitwise.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/analyze.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/apiwrapper.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/bitpack.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decapiwrapper.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decinfo.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/decode.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/dequant.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encapiwrapper.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encfrag.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encinfo.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/encode.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/enquant.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/fdct.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/fragment.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/huffdec.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/huffenc.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/idct.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/info.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/internal.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/mathops.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/mcenc.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/quant.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/rate.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/state.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/tokenize.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxencfrag.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxfdct.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxfrag.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxidct.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/mmxstate.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/x86enc.c
+/home/jumper/Documents/PDA/VTK-6.3.0/ThirdParty/oggtheora/vtkoggtheora/libtheora-1.1.1/lib/x86/x86state.c

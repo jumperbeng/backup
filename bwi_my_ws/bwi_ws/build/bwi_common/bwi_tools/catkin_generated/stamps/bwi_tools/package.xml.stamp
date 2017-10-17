@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bwi_tools</name>
+  <version>0.3.12</version>
+  <description>
+    Contains commonly used Python and C++ structures and tools in the BWI
+    project codebase
+  </description>
+
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/utexas-bwi/bwi_common</url>
+  <url type="bugtracker">https://github.com/utexas-bwi/bwi_common/issues</url>
+
+  <maintainer email="piyushk@gmail.com">Piyush Khandelwal</maintainer>
+  <maintainer email="jack.oquin@gmail.com">Jack O'Quin</maintainer>
+  <author email="piyushk@gmail.com">Piyush Khandelwal</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>cv_bridge</depend>
+  <depend>libblas-dev</depend>
+  <depend>nav_msgs</depend>
+  <depend>roslib</depend>
+
+  <build_depend>boost</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>tbb</build_depend>
+  <build_export_depend>tbb</build_export_depend>
+
+  <exec_depend>python-imaging</exec_depend>
+  <exec_depend>python-yaml</exec_depend>
+  <exec_depend>tf</exec_depend>
+
+</package>

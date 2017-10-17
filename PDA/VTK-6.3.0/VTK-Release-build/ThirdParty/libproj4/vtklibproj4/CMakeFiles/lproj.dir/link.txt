@@ -1,0 +1,1 @@
+/usr/bin/cc    -w -w -O3 -DNDEBUG   -Wl,--no-undefined -lc  -Wl,--no-undefined -lc    CMakeFiles/lproj.dir/lproj.c.o  -o ../../../bin/lproj -rdynamic ../../../lib/libvtkproj4-6.3.so.1 -lm -Wl,-rpath,/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/lib 

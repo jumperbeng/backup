@@ -1,0 +1,28 @@
+# Target labels
+ vtkDomainsChemistry
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkBlueObeliskData.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkBlueObeliskDataParser.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkCMLMoleculeReader.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeAlgorithm.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeMapper.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkPeriodicTable.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkProgrammableElectronicData.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkProteinRibbonFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkSimpleBondPerceiver.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkBlueObeliskData.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkBlueObeliskDataParser.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkCMLMoleculeReader.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeAlgorithm.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeMapper.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToAtomBallFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToBondStickFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkMoleculeToPolyDataFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkPeriodicTable.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkProgrammableElectronicData.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkProteinRibbonFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Domains/Chemistry/vtkSimpleBondPerceiver.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Domains/Chemistry/vtkDomainsChemistryModule.h

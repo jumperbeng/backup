@@ -1,0 +1,8 @@
+# CMake generated Testfile for 
+# Source directory: /home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_logging/tests
+# Build directory: /home/jumper/Documents/bwi_my_ws/bwi_ws/build/bwi_common/bwi_logging/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(_ctest_bwi_logging_nosetests_test_directory.py "/home/jumper/Documents/bwi_my_ws/bwi_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/indigo/share/catkin/cmake/test/run_tests.py" "/home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging/nosetests-test_directory.py.xml" "--return-code" "/usr/bin/cmake -E make_directory /home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging" "/usr/bin/nosetests-2.7 -P --process-timeout=60 /home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_logging/tests/test_directory.py --with-xunit --xunit-file=/home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging/nosetests-test_directory.py.xml")
+ADD_TEST(_ctest_bwi_logging_roslaunch-check_.._launch "/home/jumper/Documents/bwi_my_ws/bwi_ws/build/catkin_generated/env_cached.sh" "/usr/bin/python" "/opt/ros/indigo/share/catkin/cmake/test/run_tests.py" "/home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging/roslaunch-check_.._launch.xml" "--return-code" "/usr/bin/cmake -E make_directory /home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging" "/opt/ros/indigo/share/roslaunch/cmake/../scripts/roslaunch-check -o '/home/jumper/Documents/bwi_my_ws/bwi_ws/build/test_results/bwi_logging/roslaunch-check_.._launch.xml' '/home/jumper/Documents/bwi_my_ws/bwi_ws/src/bwi_common/bwi_logging/tests/../launch' ")

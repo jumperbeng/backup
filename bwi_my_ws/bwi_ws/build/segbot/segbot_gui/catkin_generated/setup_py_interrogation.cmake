@@ -1,0 +1,6 @@
+set(segbot_gui_SETUP_PY_VERSION "0.3.5")
+set(segbot_gui_SETUP_PY_SCRIPTS "")
+set(segbot_gui_SETUP_PY_PACKAGES "segbot_gui")
+set(segbot_gui_SETUP_PY_PACKAGE_DIRS "src/segbot_gui")
+set(segbot_gui_SETUP_PY_MODULES "")
+set(segbot_gui_SETUP_PY_MODULE_DIRS "")

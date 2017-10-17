@@ -1,0 +1,6 @@
+set(stop_base_SETUP_PY_VERSION "0.3.12")
+set(stop_base_SETUP_PY_SCRIPTS "")
+set(stop_base_SETUP_PY_PACKAGES "stop_base")
+set(stop_base_SETUP_PY_PACKAGE_DIRS "src/stop_base")
+set(stop_base_SETUP_PY_MODULES "")
+set(stop_base_SETUP_PY_MODULE_DIRS "")

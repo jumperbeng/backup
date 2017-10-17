@@ -1,0 +1,10 @@
+# Target labels
+ vtkFiltersVerdict
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkCellQuality.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkMatrixMathFilter.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkMeshQuality.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkCellQuality.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkMatrixMathFilter.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Filters/Verdict/vtkMeshQuality.h
+/home/jumper/Documents/PDA/VTK-6.3.0/VTK-Release-build/Filters/Verdict/vtkFiltersVerdictModule.h

@@ -1,0 +1,6 @@
+set(multi_level_map_utils_SETUP_PY_VERSION "0.3.12")
+set(multi_level_map_utils_SETUP_PY_SCRIPTS "")
+set(multi_level_map_utils_SETUP_PY_PACKAGES "multi_level_map_utils")
+set(multi_level_map_utils_SETUP_PY_PACKAGE_DIRS "src/multi_level_map_utils")
+set(multi_level_map_utils_SETUP_PY_MODULES "")
+set(multi_level_map_utils_SETUP_PY_MODULE_DIRS "")

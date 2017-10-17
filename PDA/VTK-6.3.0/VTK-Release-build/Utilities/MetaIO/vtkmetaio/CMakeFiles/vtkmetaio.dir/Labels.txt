@@ -1,0 +1,36 @@
+# Target labels
+ vtkMetaIO
+# Source files and their labels
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaTypes.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaUtils.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaArrow.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaBlob.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaCommand.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaCommand.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaContour.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaContour.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaDTITube.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaEllipse.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaGroup.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaGaussian.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaImage.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaImageUtils.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaLandmark.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaLine.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaMesh.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaMesh.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaObject.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaOutput.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaOutput.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaScene.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaSurface.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaTube.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaVesselTube.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaTransform.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaTubeGraph.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaForm.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaForm.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaArray.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaArray.cxx
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaFEMObject.h
+/home/jumper/Documents/PDA/VTK-6.3.0/Utilities/MetaIO/vtkmetaio/metaFEMObject.cxx

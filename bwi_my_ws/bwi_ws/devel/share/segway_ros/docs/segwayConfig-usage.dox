@@ -1,0 +1,28 @@
+\subsubsection usage Usage
+\verbatim
+<node name="segway" pkg="segway_ros" type="segway">
+  <param name="teleop_vel_limit_mps" type="double" value="0.5" />
+  <param name="teleop_accel_limit_mps2" type="double" value="0.5" />
+  <param name="teleop_yaw_rate_limit_rps" type="double" value="1.0" />
+  <param name="teleop_yaw_accel_limit_rps2" type="double" value="1.0" />
+  <param name="vel_limit_mps" type="double" value="1.0" />
+  <param name="accel_limit_mps2" type="double" value="0.5" />
+  <param name="decel_limit_mps2" type="double" value="0.5" />
+  <param name="dtz_decel_limit_mps2" type="double" value="1.0" />
+  <param name="yaw_rate_limit_rps" type="double" value="1.0" />
+  <param name="yaw_accel_limit_rps2" type="double" value="1.0" />
+  <param name="lateral_accel_limit_mps2" type="double" value="4.905" />
+  <param name="tire_rolling_diameter_m" type="double" value="0.46228" />
+  <param name="wheel_base_length_m" type="double" value="0.5842" />
+  <param name="wheel_track_width_m" type="double" value="0.569976" />
+  <param name="gear_ratio" type="double" value="24.2667" />
+  <param name="enable_audio" type="bool" value="True" />
+  <param name="motion_while_charging" type="bool" value="False" />
+  <param name="balance_mode_enabled" type="bool" value="False" />
+  <param name="balace_gains" type="int" value="0" />
+  <param name="vel_ctl_input_filter" type="int" value="0" />
+  <param name="yaw_ctl_input_filter" type="int" value="0" />
+  <param name="torqe_limit" type="double" value="100.0" />
+</node>
+\endverbatim
+
